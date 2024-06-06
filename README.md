@@ -55,8 +55,7 @@ cd secrets-manager
 cd live/dev/us-west-2/secrets
 ```
 
-3. Update the `secret-value.json` with desired secret key and value
-4. Set required environment variables
+3. Set required environment variables
 ```
 export SECRET_NAME="exchange-server-api-key"
 export SECRET_DESCRIPTION="api key to access apis"
