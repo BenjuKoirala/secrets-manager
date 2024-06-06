@@ -20,29 +20,34 @@ brew install terragrunt
 ```
 brew install jq
 ```
+- Install git-crypt
+```
+brew install git-crypt
+```
+
 - An AWS account with appropriate IAM roles (see below).
 
 ### IAM Roles Needed
 
 To use this module, the following IAM roles are required:
 ```
-"secretsmanager:UntagResource",
-"secretsmanager:DescribeSecret",
-"secretsmanager:DeleteResourcePolicy",
-"secretsmanager:PutSecretValue",
-"secretsmanager:CreateSecret",
-"secretsmanager:DeleteSecret",
-"secretsmanager:GetResourcePolicy",
-"secretsmanager:GetSecretValue",
-"secretsmanager:PutResourcePolicy",
-"secretsmanager:ListSecrets",
-"secretsmanager:TagResource"
+secretsmanager:UntagResource
+secretsmanager:DescribeSecret
+secretsmanager:DeleteResourcePolicy
+secretsmanager:PutSecretValue
+secretsmanager:CreateSecret
+secretsmanager:DeleteSecret
+secretsmanager:GetResourcePolicy
+secretsmanager:GetSecretValue
+secretsmanager:PutResourcePolicy
+secretsmanager:ListSecrets
+secretsmanager:TagResource
 ```
 
 ## Setting Up the Project
 1.
 ```
-git clone <repo_url>
+git clone https://github.com/BenjuKoirala/secrets-manager.git
 ```
 ```
 cd secrets-manager
