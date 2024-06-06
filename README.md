@@ -45,7 +45,8 @@ secretsmanager:TagResource
 ```
 
 ## Setting Up the Project
-1.
+
+1. Clone the repo
 ```
 git clone https://github.com/BenjuKoirala/secrets-manager.git
 ```
@@ -59,6 +60,14 @@ cd live/dev/us-west-2/secrets
 ```
 
 3. Update the `secret-value.json` with desired secret key and value
+4. Set required environment variables
+```
+export SECRET_NAME="exchange-server-api-key"
+export SECRET_DESCRIPTION="api key to access apis"
+export SECRET_VALUE="abdc"
+export TAG_ENVIRONMENT="dev"
+export TAG_PROJECT=""
+```
 4. Initialize terragrunt
 ```
 terragrunt init
