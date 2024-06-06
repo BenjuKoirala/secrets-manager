@@ -20,10 +20,6 @@ brew install terragrunt
 ```
 brew install jq
 ```
-- Install git-crypt
-```
-brew install git-crypt
-```
 
 - An AWS account with appropriate IAM roles (see below).
 
@@ -78,4 +74,4 @@ terragrunt apply
 ```
 
 ## Security Considerations
-* Git-Crypt: This project uses Git-Crypt to encrypt sensitive files (secret-values.json) before commiting to repository.
+* Git-Crypt: We can use Git-Crypt to encrypt sensitive files (secret-values.json) before commiting to repository.
