@@ -72,5 +72,10 @@ terragrunt init
 terragrunt apply
 ```
 
+6. List all secrets using script
+```
+./list-secrets.sh
+```
+
 ## Security Considerations
 * Git-Crypt: We can use Git-Crypt to encrypt sensitive files (secret-values.json) before commiting to repository.
