@@ -5,19 +5,36 @@ variable "region" {
   default     = "us-west-2"
 }
 
-variable "secret_name" {
+variable "secret_name1" {
   description = "Name of the secret."
   type        = string
 }
 
-variable "secret_description" {
-  description = "Description of the secret."
+variable "secret_name2" {
+  description = "Name of the secret."
+  type        = string
+}
+
+variable "secret_description1" {
+  description = "Description of the secret1."
   type        = string
   default     = "Managed by Terraform"
 }
 
-variable "secret_value" {
-  description = "Secret value."
+variable "secret_description2" {
+  description = "Description of the secret2."
+  type        = string
+  default     = "Managed by Terraform"
+}
+
+variable "secret_value1" {
+  description = "Secret value of secret1."
+  type        = string
+  sensitive   = true
+}
+
+variable "secret_value2" {
+  description = "Secret value of secret2."
   type        = string
   sensitive   = true
 }
@@ -27,3 +44,4 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
