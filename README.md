@@ -57,12 +57,11 @@ cd live/dev/us-west-2/secrets
 
 3. Set required environment variables
 ```
-export SECRET_NAME="exchange-server-api-key"
-export SECRET_DESCRIPTION="api key to access apis"
-export SECRET_VALUE="abdc"
-export TAG_ENVIRONMENT="dev"
-export TAG_PROJECT=""
+export SECRET_VALUE1=""
+export SECRET_VALUE2=""
 ```
+Note : Make sure to update SECRET_VALUE1 and SECRET_VALUE2 with your secrets
+
 4. Initialize terragrunt
 ```
 terragrunt init
